@@ -72,6 +72,8 @@ const AuthShowcase: React.FC = () => {
     <div className="flex flex-col items-center justify-center gap-4">
       <p className="text-center text-2xl text-white">
         {sessionData && <span>Logged in as {sessionData.user?.name}</span>}       
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-ignore */}
         {sessionData && <Image src={sessionData.user.image} width={100} height={100}/>}
         {secretMessage && <span> - {secretMessage}</span>}
       </p>
